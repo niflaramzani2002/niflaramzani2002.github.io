@@ -3,90 +3,218 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>YOUR NAME — Portfolio</title>
-  <meta name="description" content="Full-stack developer portfolio" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Nifla Ramzani — Portfolio</title>
+  <meta name="description" content="Portfolio of Nifla Ramzani — Full‑Stack & AI developer (MERN, Flask, TensorFlow/Keras, React Native)." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="container">
-    <h1>YOUR NAME</h1>
-    <p class="tagline">Computer Science undergraduate • MERN + Python/Flask</p>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header>
+    <div class="container nav">
+      <div class="brand">Nifla <span>Ramzani</span></div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <section id="projects">
-      <h2>Projects</h2>
+  <main id="home" class="container">
+    <!-- HERO -->
+    <section class="hero" aria-label="Intro">
+      <div>
+        <span class="chip">Full‑Stack & AI Developer</span>
+        <h1 class="title">I build <span class="accent">MERN</span> & <span class="accent">AI‑powered</span> apps for the real world.</h1>
+        <p class="subtitle">Specialising in React/Node (web & mobile), Flask microservices, and TensorFlow/Keras for image analysis. Experienced with SBERT chatbots, JWT auth, and cloud‑ready architectures.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/niflaramzani2002" target="_blank" rel="noopener">View GitHub ↗</a>
+          <a class="btn ghost" href="#projects">See Projects</a>
+        </div>
+        <div class="quick" aria-label="Quick highlights">
+          <div>React • Node • Express</div>
+          <div>Flask • TensorFlow/Keras</div>
+          <div>MongoDB • JWT</div>
+        </div>
+      </div>
+      <div class="hero-card" role="img" aria-label="Decorative code card">
+        <pre style="margin:0;white-space:pre-wrap;color:#d5f5f7"><code>// Favorite stack
+const stack = ["React", "Node", "Express", "MongoDB", "Flask", "TensorFlow"];
 
-      <div class="grid">
-        <article class="card">
-          <h3>DentaEase (AI Dental App)</h3>
-          <p>MERN + Python/Flask microservice with CNN image analysis and chatbot.</p>
-          <ul>
-            <li>React Native, Node/Express, MongoDB</li>
-            <li>TensorFlow/Keras CNN, SBERT chatbot</li>
-          </ul>
-          <p>
-            <a class="btn" href="https://github.com/USERNAME/DentaEase" target="_blank" rel="noreferrer">Code</a>
-          </p>
+function ship(feature){
+  return `build → test → refine → ${feature} shipped`;
+}
+</code></pre>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-title">
+      <h2 class="section-title" id="about-title">About Me</h2>
+      <p class="section-desc">Motivated Computer Science undergraduate with a strong foundation in full‑stack development and hands‑on AI. I enjoy turning complex requirements into simple, reliable user experiences.</p>
+      <div class="about">
+        <div class="card">
+          <h3>What I do</h3>
+          <p>Design and develop end‑to‑end applications: React/React Native frontends, Node/Express APIs, MongoDB, and Python/Flask AI microservices. I’ve built CNN image scanners, SBERT‑based Q&A chatbots, secure JWT auth flows, and integrations like maps & notifications.</p>
+        </div>
+        <div class="card">
+          <h3>What I value</h3>
+          <p>User‑centred design, accessibility, clean architecture, and evidence‑based iteration (Agile sprints). Privacy‑by‑design and safety‑first principles guide all my AI features.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 class="section-title" id="skills-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Programming</h4>
+          <div class="skill-chips">
+            <span class="pill">C</span><span class="pill">C++</span><span class="pill">Java</span><span class="pill">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Frontend</h4>
+          <div class="skill-chips">
+            <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">React</span><span class="pill">React Native</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Backend</h4>
+          <div class="skill-chips">
+            <span class="pill">Node.js</span><span class="pill">Express.js</span><span class="pill">Flask</span><span class="pill">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Databases</h4>
+          <div class="skill-chips">
+            <span class="pill">MongoDB</span><span class="pill">MySQL</span><span class="pill">PHP</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>AI & ML</h4>
+          <div class="skill-chips">
+            <span class="pill">TensorFlow/Keras</span><span class="pill">CNNs</span><span class="pill">SBERT (NLP)</span><span class="pill">Image classification</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Tools</h4>
+          <div class="skill-chips">
+            <span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">VS Code</span><span class="pill">Postman</span><span class="pill">Firebase</span><span class="pill">MongoDB Compass</span><span class="pill">JWT</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 class="section-title" id="projects-title">Projects</h2>
+      <p class="section-desc">A few things I’m proud of — built with MERN, Flask microservices, and AI components.</p>
+      <div class="projects">
+        <!-- DentaEase -->
+        <article class="project">
+          <div class="thumb">DentaEase</div>
+          <div class="content">
+            <h3>DentaEase — AI‑Powered Dental Care App</h3>
+            <p>Cross‑platform app with CNN image analysis (binary → multiclass), SBERT chatbot, appointment scheduling, and clinic locator.</p>
+            <div class="tags">
+              <span class="tag">React Native</span><span class="tag">Node/Express</span><span class="tag">Flask</span><span class="tag">TensorFlow/Keras</span><span class="tag">MongoDB</span>
+            </div>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/niflaramzani2002/DentaEase---Dental-App" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
         </article>
 
-        <article class="card">
-          <h3>Saloon Management (Web)</h3>
-          <p>Booking & scheduling flow; built with the MERN stack.</p>
-          <ul>
-            <li>React, Node/Express, MongoDB</li>
-          </ul>
-          <p>
-            <a class="btn" href="https://github.com/USERNAME/Saloon-App" target="_blank" rel="noreferrer">Code</a>
-          </p>
+        <!-- ZenoFuel Station -->
+        <article class="project">
+          <div class="thumb">ZenoFuel Station</div>
+          <div class="content">
+            <h3>Zenofuel Station — Fuel Station Management</h3>
+            <p>Web app to manage station operations: users, pumps, shifts, reports; led attendance and leave management modules.</p>
+            <div class="tags">
+              <span class="tag">MERN</span><span class="tag">Express</span><span class="tag">MongoDB</span>
+            </div>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/Ahamed-Rahman/ZenoFuelStation_ITP" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </article>
+
+        <!-- BananaBash -->
+        <article class="project">
+          <div class="thumb">BananaBash</div>
+          <div class="content">
+            <h3>BananaBash — Educational Game</h3>
+            <p>Interactive web game to enhance learning and engagement using MERN stack and Banana API.</p>
+            <div class="tags">
+              <span class="tag">MERN</span><span class="tag">Game</span><span class="tag">API</span>
+            </div>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/niflaramzani2002/BananaBash" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </article>
+
+        <!-- Siva Saloon -->
+        <article class="project">
+          <div class="thumb">Siva Saloon</div>
+          <div class="content">
+            <h3>Siva Saloon — Appointment & Booking (Web)</h3>
+            <p>Web‑based salon appointment system built on MERN. Contributed to scheduling calendar and booking features.</p>
+            <div class="tags">
+              <span class="tag">MERN</span><span class="tag">Scheduling</span>
+            </div>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/Ahamed-Rahman/siva-saloon" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="chips">
-        <span>MERN (React/Node/Express/MongoDB)</span>
-        <span>React Native</span>
-        <span>Python • Flask</span>
-        <span>TensorFlow/Keras (CNN)</span>
-        <span>NLP • SBERT</span>
-        <span>JWT Auth</span>
-        <span>Git • GitHub • Postman</span>
+    <!-- EDUCATION -->
+    <section id="education" aria-labelledby="edu-title">
+      <h2 class="section-title" id="edu-title">Education</h2>
+      <div class="timeline">
+        <div class="edu">
+          <h3>B.Sc. (Hons) in Computer Science <small>— 2025</small></h3>
+          <p>SLIIT City University (University of Bedfordshire)</p>
+        </div>
+        <div class="edu">
+          <h3>HND in Information Technology <small>— 2023–2024</small></h3>
+          <p>Sri Lanka Institute of Information Technology (SLIIT)</p>
+        </div>
       </div>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I’m a CS student focused on AI-enabled mobile apps. I build secure,
-        privacy-first features with clean UX, and I enjoy turning research ideas
-        into working products.
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <ul class="contact">
-        <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/YOUR-LINK">YOUR-LINK</a></li>
-        <li>GitHub: <a href="https://github.com/USERNAME">github.com/USERNAME</a></li>
-      </ul>
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 class="section-title" id="contact-title">Contact</h2>
+      <div class="contact-card">
+        <p style="margin:0;color:#e7fbfd">Open to internships and junior roles in full‑stack & AI. Let’s build something meaningful.</p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:niflaramzani2002@gmail.com">Email me</a>
+          <a class="btn ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn ghost" href="https://github.com/niflaramzani2002" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="container">
-    <small>© <span id="year"></span> YOUR NAME. Built with ♥︎ and GitHub Pages.</small>
+  <footer>
+    <div class="container">© <span id="year"></span> Nifla Ramzani • Built with ❤️ using pure HTML & CSS</div>
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById('year').textContent=new Date().getFullYear();
   </script>
 </body>
 </html>
