@@ -1,0 +1,29 @@
+:root{
+  --bg:#0f172a;        /* slate-900 */
+  --panel:#111827;     /* gray-900 */
+  --muted:#94a3b8;     /* slate-400 */
+  --text:#e5e7eb;      /* gray-200 */
+  --accent:#22d3ee;    /* cyan-400 */
+  --ring:#38bdf8;      /* sky-400 */
+  --card:#0b1220;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+a{color:var(--accent);text-decoration:none}
+a:hover{outline:2px solid var(--ring);outline-offset:2px;border-radius:.4rem}
+.container{max-width:1000px;margin:0 auto;padding:2rem}
+header{padding-top:3rem;padding-bottom:1rem}
+h1{font-size:2.25rem;margin:.25rem 0}
+.tagline{color:var(--muted);margin:.25rem 0 1rem}
+nav a{margin-right:1rem}
+h2{margin:2.5rem 0 1rem;font-size:1.5rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.card{background:var(--card);border:1px solid #1f2937;padding:1rem;border-radius:1rem;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+.card h3{margin-top:0}
+.card ul{padding-left:1.25rem;margin:.5rem 0}
+.btn{display:inline-block;padding:.5rem .9rem;border:1px solid var(--accent);border-radius:.7rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chips span{border:1px solid #1f2937;background:#0a0f1b;padding:.35rem .6rem;border-radius:999px;font-size:.9rem}
+.contact{list-style:none;padding:0;margin:0}
+footer{color:var(--muted);padding-bottom:3rem}
+@media (max-width:600px){ h1{font-size:1.8rem} }
