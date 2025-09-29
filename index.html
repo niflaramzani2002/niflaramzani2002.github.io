@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YOUR NAME — Portfolio</title>
+  <meta name="description" content="Full-stack developer portfolio" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>YOUR NAME</h1>
+    <p class="tagline">Computer Science undergraduate • MERN + Python/Flask</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>DentaEase (AI Dental App)</h3>
+          <p>MERN + Python/Flask microservice with CNN image analysis and chatbot.</p>
+          <ul>
+            <li>React Native, Node/Express, MongoDB</li>
+            <li>TensorFlow/Keras CNN, SBERT chatbot</li>
+          </ul>
+          <p>
+            <a class="btn" href="https://github.com/USERNAME/DentaEase" target="_blank" rel="noreferrer">Code</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Saloon Management (Web)</h3>
+          <p>Booking & scheduling flow; built with the MERN stack.</p>
+          <ul>
+            <li>React, Node/Express, MongoDB</li>
+          </ul>
+          <p>
+            <a class="btn" href="https://github.com/USERNAME/Saloon-App" target="_blank" rel="noreferrer">Code</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span>MERN (React/Node/Express/MongoDB)</span>
+        <span>React Native</span>
+        <span>Python • Flask</span>
+        <span>TensorFlow/Keras (CNN)</span>
+        <span>NLP • SBERT</span>
+        <span>JWT Auth</span>
+        <span>Git • GitHub • Postman</span>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I’m a CS student focused on AI-enabled mobile apps. I build secure,
+        privacy-first features with clean UX, and I enjoy turning research ideas
+        into working products.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="contact">
+        <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/YOUR-LINK">YOUR-LINK</a></li>
+        <li>GitHub: <a href="https://github.com/USERNAME">github.com/USERNAME</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>© <span id="year"></span> YOUR NAME. Built with ♥︎ and GitHub Pages.</small>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
